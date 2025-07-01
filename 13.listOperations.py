@@ -33,3 +33,12 @@ del Mylist1[0:2]
 print(Mylist1)
 Mylist1.remove('e')
 print(Mylist1)
+
+#searching through list
+
+searchList=[1,2,3,44,55,34,5,2,4,23]
+target=55
+if target in searchList:
+    print(f"the {target} is present in the list")
+else:
+     print(f"the {target} is not present in the list")
