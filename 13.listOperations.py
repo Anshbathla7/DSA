@@ -1,7 +1,7 @@
-list=[1,2,3,44]
-print(list)
-for i in range(len(list)):
-    list[i]=list[i] +1
+listx=[1,2,3,44]
+print(listx)
+for i in range(len(listx)):
+    listx[i]=listx[i] +1
     print(list[i])
 
 #try to traverse empty list
@@ -42,3 +42,40 @@ if target in searchList:
     print(f"the {target} is present in the list")
 else:
      print(f"the {target} is not present in the list")
+
+#adding two lists using concationation method
+
+l1=[1,2,3]
+l2=[4,5,6]
+l3=l1+l2
+print(l3)
+
+# Multiply list using * operator
+l4=[1,2,3]
+l4=l4*3
+print(l4)
+
+#finding maximum and minimum element in the list
+l5=[1,2,3,44,55,34,5,2,4,23]
+print(max(l5))
+print(min(l5))
+#find the length of list
+print(len(l5))
+#adding all the elements in the list
+print(sum(l5))
+
+#convert strings into list
+
+a = 'spam'
+b=list(a)
+print(b)
+#using split function
+c = 'spam spam spam'
+d=c.split()
+print(d)
+
+e='spam1-spam2-spam3'
+delimeter='-'
+f=e.split(delimeter)
+print(f)
+print(delimeter.join(f))
