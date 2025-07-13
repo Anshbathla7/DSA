@@ -38,3 +38,20 @@ secondMethod=del_icon.pop('rollno') # we can delete any index from pop method to
 print(del_icon)
 ThirdMethod=del_icon.popitem() #popitem method takes no argument and it removes the last item for dictionary.
 print(del_icon)
+# clear method is used to delete all elements of the dictionary and print empty dictionary
+CheckclearMethod={'name':'ansh','class':'12th','rollno':'1','address':'tejvihar,meerut'}
+CheckclearMethod.clear()
+print(CheckclearMethod)
+# copy method is used to copy the dictionary
+CheckCopyMethod={'name':'ansh','class':'12th','rollno':'1','address':'tejvihar,meerut'}
+newDict=CheckCopyMethod.copy()
+print(newDict)
+# using fromkeys method to make new dicitonary
+student_data={}.fromkeys([1,2,3],'ansh')
+print(student_data)
+#using get method 
+CheckgetMethod={'name':'ansh','class':'12th','rollno':'1','address':'tejvihar,meerut'}
+print(CheckgetMethod.get('name',0)) 
+#using items method to make tuples of keys and value
+CheckitemMethod={'name':'ansh','class':'12th','rollno':'1','address':'tejvihar,meerut'}
+print(CheckitemMethod.items())
